@@ -1,0 +1,207 @@
+/*  general   */
+
+body {
+    font-family: Helvetica;
+    font-size:22px;
+    color:seashell;
+    background-color:black;
+    opacity:0.9;
+    margin:0;
+}
+a {
+    color:seashell;
+}
+
+/*   Header Area     */
+
+header {
+    display:flex;
+}
+#header {
+    display:inline-flex;
+    height: 69px;
+    position:fixed;
+    border-bottom: 1px solid seashell;
+    width:100%;
+    flex-direction: row;
+    flex-shrink:2;
+    z-index:3;
+    top:0;
+    padding: 0 0;
+    background-color: black;
+    align-items:center;
+}
+
+#logo {
+    margin-left:10px;
+    max-height: 50px;
+}
+nav {
+    position:absolute;
+    right:0;
+    margin-right:10px;
+}
+ul {
+    flex-shrink:2;
+    display:inline-flex;
+}
+.nav {
+    text-decoration: underline;
+    list-style-type: none;
+    list-style: none;
+    display:inline;
+    text-align:right;
+    margin-inline-start: 0;
+    margin-inline-end: 20px;
+}
+
+#Mission {
+    margin: 70px 50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#missionbg {
+    z-index: 1;
+    flex-basis:1200px;
+    height:700px;
+}
+
+#Mission div {
+    z-index: 2;
+    background-color: black;
+    flex-flow: inherit;
+    display:flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    /*line-height: 10px;*/
+    padding-top:3px;
+}
+#Mission div h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#Mission div h4 {
+    margin-block:10px;
+}
+
+/* Featured Area */
+
+#Featured {
+    padding-top:50px;
+    text-align: center;
+}
+#Featured h2 {
+    margin-block-end:25px;
+}
+#Featured h4 {
+    margin-block-start: 0;
+    margin-block-end: 10px;
+}
+
+#teas {
+    margin: 0px 70px;
+    display:inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+figure {
+    margin-inline: 15px;
+    margin-block:15px;
+}
+#teas img {
+    max-height: 200px;
+    max-width:300px;
+}
+#teas figcaption h4 {
+    text-align: center;
+    margin-top:15px;
+    margin-block:0;
+}
+
+/*      Locations       */
+
+#Locations {
+    display:flex;
+    align-items: stretch;
+    justify-items: center;
+    flex-flow: row wrap;
+    height:500px;
+    margin: 0 50px;
+    overflow: hidden;
+}
+
+#Locations img {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#FUCK {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    height: 500px;
+    right: 50px;
+    left: 50px;
+    overflow:hidden;
+}
+#FUCK h2 {
+    margin-block:0;
+    margin-bottom:15px;
+}
+
+#info-loc {
+    display: inline-flex;
+    justify-content: center; /* Centers items horizontally within the container */
+    align-items: center;  /* Centers items vertically within the container */
+    flex-flow: row wrap;
+    width: 100%; /* Ensures the flex container takes the full width of the parent */
+    text-align: center; /* Ensures the text inside flex items is centered */
+    overflow:hidden;
+}
+
+#Locations article {
+    background-color: black;
+    width:300px;
+    text-align:center;
+    margin: 0 20px;
+    line-height: 80%;
+}
+#Locations article h3 {
+    line-height: 150%;
+}
+
+/* Contact */
+
+#Address {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    width:100%;
+    flex-direction: column;
+    font-style: normal;
+    background-color: black;
+    text-align: center;
+    height:200px;
+}
+#Address h5 {
+    margin-block: 15px;
+}
+#Address h2 {
+    margin-block-end: 25px;
+    margin-block-start: 10px;
+}
+
+/* Footer */
+
+footer {
+    margin:20px;
+    text-align: left;
+}
